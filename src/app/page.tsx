@@ -1,4 +1,5 @@
 import { BentoGrid } from "@/components/bento";
+import { ColorChanger } from "@/components/color-changer.tsx";
 import { Hero } from "../components/hero";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <Hero />
       <BentoGrid />
+      <ColorChanger />
     </div>
   );
 }
