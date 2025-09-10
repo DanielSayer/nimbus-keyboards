@@ -9,7 +9,7 @@ type GLTFResult = GLTF & {
   materials: Record<string, unknown>;
 };
 
-type KepcapProps = {
+type KeycapProps = {
   position?: [number, number, number];
   rotation?: [number, number, number];
   texture?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
@@ -31,7 +31,7 @@ function Keycap({
   position = [0, 0, 0],
   rotation = [0, 0, 0],
   texture = 0,
-}: KepcapProps) {
+}: KeycapProps) {
   const uvTexture = textures[texture];
   const keycapTexture = useTexture(uvTexture);
   keycapTexture.flipY = false;
@@ -45,8 +45,13 @@ function Keycap({
   });
 
   return (
-    <Float rotationIntensity={0.3}>
-      <group dispose={null} position={position} rotation={rotation}>
+    <Float
+      rotationIntensity={3}
+      floatIntensity={0.8}
+      position={position}
+      rotation={rotation}
+    >
+      <group dispose={null}>
         <mesh
           castShadow
           receiveShadow

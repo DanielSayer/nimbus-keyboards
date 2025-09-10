@@ -38,7 +38,7 @@ function Hero() {
             </p>
           </div>
           <button className="font-bold-slanted group bg-primary flex w-fit cursor-pointer items-center gap-0.5 rounded-2xl px-3 py-1 text-2xl uppercase transition disabled:grayscale">
-            Buy Vapor 75
+            Buy Vapor75
             <ChevronRightIcon className="transition group-hover:translate-x-1" />
           </button>
         </Bounded>
