@@ -49,6 +49,10 @@ function FadeIn({
         },
       });
     });
+
+    mm.add("(prefers-reduced-motion: reduce)", () => {
+      gsap.set(target, { opacity: 1 });
+    });
   }, []);
 
   return (
