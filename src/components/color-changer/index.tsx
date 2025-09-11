@@ -17,6 +17,7 @@ function ColorChanger() {
     if (isAnimating) return;
 
     setSelectedKeycap(keycap);
+    setIsAnimating(true);
   };
 
   const handleAnimationEnd = useCallback(() => {
