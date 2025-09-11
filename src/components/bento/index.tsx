@@ -2,19 +2,22 @@ import { cn } from "@/lib/utils";
 import { Bounded } from "../bounded";
 import Image from "next/image";
 import { type BentoItem, bentoItems } from "./items";
+import { FadeIn } from "../fade-in";
 
 function BentoGrid() {
   return (
     <Bounded>
-      <h2 className="font-bold-slanted mb-8 scroll-pt-6 text-6xl uppercase md:text-8xl">
-        Vapor75 Features
-      </h2>
+      <FadeIn>
+        <h2 className="font-bold-slanted mb-8 scroll-pt-6 text-6xl uppercase md:text-8xl">
+          Vapor75 Features
+        </h2>
+      </FadeIn>
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-6">
+      <FadeIn className="grid grid-cols-1 gap-4 md:grid-cols-6" targetChildren>
         {bentoItems.map((item) => (
           <BentoGridItem key={item.alt} item={item} />
         ))}
-      </div>
+      </FadeIn>
     </Bounded>
   );
 }
