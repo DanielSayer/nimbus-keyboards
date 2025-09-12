@@ -1,13 +1,14 @@
 "use client";
 
+import { useGSAP } from "@gsap/react";
+import { Canvas } from "@react-three/fiber";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
 import { ChevronRightIcon } from "lucide-react";
 import { Bounded } from "../bounded";
-import { Canvas } from "@react-three/fiber";
+import { LoaderWrapper } from "./loader-wrapper";
 import { Scene } from "./scene";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { SplitText } from "gsap/SplitText";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, SplitText, ScrollTrigger);
 
@@ -65,6 +66,7 @@ function Hero() {
 
   return (
     <section className="GSAP_hero relative h-dvh text-white text-shadow-black/30 text-shadow-lg motion-safe:h-[300vh]">
+      <LoaderWrapper />
       <div className="GSAP_hero-scene pointer-events-none sticky top-0 h-dvh w-full">
         <Canvas shadows="soft">
           <Scene />
