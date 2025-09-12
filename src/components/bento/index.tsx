@@ -33,7 +33,6 @@ function BentoGridItem(props: { item: BentoItem }) {
     >
       <Image
         className="size-full object-cover"
-        quality={96}
         width={700}
         height={400}
         src={props.item.src}
