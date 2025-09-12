@@ -1,11 +1,11 @@
 import type { ReactNode } from "react";
 
-import Profile from "../../../public/render_11_2.png";
-import FullImage from "../../../public/render_2.png";
-import Screen from "../../../public/render_3.png";
-import Knob from "../../../public/render_5_angled.png";
-import BottomView from "../../../public/render_6.png";
-import Switches from "../../../public/render_9.png";
+import Profile from "../../../public/marketing/render_11_2.png";
+import FullImage from "../../../public/marketing/render_2.png";
+import Screen from "../../../public/marketing/render_3.png";
+import Knob from "../../../public/marketing/render_5_angled.png";
+import BottomView from "../../../public/marketing/render_6.png";
+import Switches from "../../../public/marketing/render_9.png";
 
 export type BentoItem = {
   src: string;

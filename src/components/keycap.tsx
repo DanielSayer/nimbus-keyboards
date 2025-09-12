@@ -16,15 +16,15 @@ type KeycapProps = {
 };
 
 const textures = [
-  "/keycap_uv-1.png",
-  "/keycap_uv-2.png",
-  "/keycap_uv-3.png",
-  "/keycap_uv-4.png",
-  "/keycap_uv-5.png",
-  "/keycap_uv-6.png",
-  "/keycap_uv-7.png",
-  "/keycap_uv-8.png",
-  "/keycap_uv-9.png",
+  "/keycaps/keycap_uv-1.png",
+  "/keycaps/keycap_uv-2.png",
+  "/keycaps/keycap_uv-3.png",
+  "/keycaps/keycap_uv-4.png",
+  "/keycaps/keycap_uv-5.png",
+  "/keycaps/keycap_uv-6.png",
+  "/keycaps/keycap_uv-7.png",
+  "/keycaps/keycap_uv-8.png",
+  "/keycaps/keycap_uv-9.png",
 ];
 
 function Keycap({
