@@ -1,11 +1,9 @@
+import { prefersReducedMotion } from "@/lib/utils";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
 const baseCameraPosition = { x: 0, y: 0, z: 4 };
-const prefersReducedMotion =
-  typeof window !== "undefined" &&
-  window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 function useCameraController() {
   const { camera, size } = useThree();
